@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>mySchedule by criztovyl</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/criztovyl/myschedule">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/criztovyl/myschedule/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/criztovyl/myschedule/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>mySchedule</h1>
+          <p>Script to directly go to your schedule</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/criztovyl">criztovyl</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="myschedule" class="anchor" href="#myschedule" aria-hidden="true"><span class="octicon octicon-link"></span></a>MySchedule</h1>
+
+<p>This is an script, that enables you to go directly to your schedule from your schedule manager's welcome page.</p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h1>
+
+<p>This application requires Greasemonkey and currently only available for Mozilla Firefox. </p>
+
+<p>How to install requirements is shown in "Prerequisites" below.</p>
+
+<h1>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h1>
+
+<p>To install the Mozilla Firefox go to <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox Download Page</a> and follow the installer's instructions.</p>
+
+<p>To install Greasemonkey, go to it's <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/">Addon Page</a> and add it to Firefox.</p>
+
+<h1>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h1>
+
+<p>To install the script, click <a href="myschedule.user.js">here</a> or open the <code>myschedule.user.js</code> with your Firefox. Greasemonky will ask you if you want to install the script, click install, if you want to ;)</p>
+
+<p>Then you are ready to go :)</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Go to your schedule manager's page. You will see a new text line, that wasn't there before, calling "Not set, please set schedule first.". For the first usage, thats okay.</p>
+
+<p>As next choose your schedule and press the "Set" Button below the schedule table. There should be an alert "Set your schedule to c1", where c1 is the id of your schedule.</p>
+
+<p>Next time you visit the page, you will see a "My Schedule" button instead of the text. Click on it and it will display your schedule, set before. The schedule id is saved via an cookie, so you should allow your schedule manager's cookies, if you have configured to delete cookies or so.</p>
+
+<p>You also can go directly to your schedule if you add <code>#myschedule</code> to the URL, than you don't need to click on the button.</p>
+
+<h1>
+<a id="meta" class="anchor" href="#meta" aria-hidden="true"><span class="octicon octicon-link"></span></a>Meta</h1>
+
+<h2>
+<a id="background" class="anchor" href="#background" aria-hidden="true"><span class="octicon octicon-link"></span></a>Background</h2>
+
+<p>I've written this because it was exhausting search the schedule every time. And because I wanted to try GreaseMonkey :)</p>
+
+<h2>
+<a id="problems" class="anchor" href="#problems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problems</h2>
+
+<p>A problem was to get the Week of Year of an date but I've found an <a href="http://stackoverflow.com/a/6117889">solution on StackOverflow</a>(the minified prototype). The schedule manager's page is made with frames, so the way dealing with getting and setting the (frame) window location is different.</p>
+
+<h2>
+<a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>ToDo</h2>
+
+<ul>
+<li>Add "show welcome page"</li>
+<li>Make code object-orientated.</li>
+</ul>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<p>See <a href="https://github.com/criztovyl/myschedule/commits/master">commits</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<pre><code>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</code></pre>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>(c) 2015 Christoph "criztovyl" Schulz. <a href="mailto:ch.schulz@joinout.de">ch.schulz@joinout.de</a></p>
+
+<h2>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
+
+<ul>
+<li><a href="https://github.com/criztovyl/myschedule">GitHub Repo</a></li>
+<li><a href="https://github.com/criztovyl">Author's GitHub</a></li>
+<li><a href="http://joinout.de">Author's Website</a></li>
+<li><a href="http://criztovyl.joinout.de">Author's Blog</a></li>
+<li>Application's Page (coming soon...)</li>
+</ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
