@@ -14,7 +14,7 @@ To install Greasemonkey, go to it's [Addon Page](https://addons.mozilla.org/en-U
 #Install
 To install the script, click [here](myschedule.user.js) or open the `myschedule.user.js` with your Firefox. Greasemonky will ask you if you want to install the script, click install, if you want to ;)
 
-The your'e ready to go :)
+Then you are ready to go :)
 
 #Usage
 Go to your schedule manager's page. You will see a new text line, that wasn't there before, calling "Not set, please set schedule first.". For the first usage, thats okay.
@@ -28,7 +28,7 @@ You also can go directly to your schedule if you add `#myschedule` to the URL, t
 #Meta
 
 ##Background
-I've written this because it was exhausting searching the schedule every time and because I wanted to try GreaseMonkey :)
+I've written this because it was exhausting search the schedule every time. And because I wanted to try GreaseMonkey :)
 
 ##Problems
 A problem was to get the Week of Year of an date but I've found an [solution on StackOverflow](http://stackoverflow.com/a/6117889)(the minified prototype). The schedule manager's page is made with frames, so the way dealing with getting and setting the (frame) window location is different.
