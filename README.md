@@ -21,9 +21,11 @@ Go to your schedule manager's page. You will see a new text line, that wasn't th
 
 As next choose your schedule and press the "Set" Button below the schedule table. There should be an alert "Set your schedule to c1", where c1 is the id of your schedule.
 
-Next time you visit the page, you will see a "My Schedule" button instead of the text. Click on it and it will display your schedule, set before. The schedule id is saved via an cookie, so you should allow your schedule manager's cookies, if you have configured to delete cookies or so.
+Next time you visit the page, you will see a "My Schedule" button instead of the text. Click on it and it will display your schedule, set before. On the schedule page you also can navigate to next and previous or welcome page.
 
-You also can go directly to your schedule if you add `#myschedule` to the URL, than you don't need to click on the button.
+The schedule id is saved via an cookie, so you should allow your schedule manager's page cookies, if you have configured to delete cookies or so.
+
+You also can go directly to your schedule if you add `#myschedule` to the URL, then you don't need to click on the button.
 
 #Meta
 
@@ -69,4 +71,4 @@ See [commits](https://github.com/criztovyl/myschedule/commits/master).
 * [Author's GitHub](https://github.com/criztovyl)
 * [Author's Website](http://joinout.de)
 * [Author's Blog](http://criztovyl.joinout.de)
-* Application's Page (coming soon...)
+* [Application's Page](https://criztovyl.github.io/myschedule)
