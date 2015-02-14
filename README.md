@@ -34,9 +34,14 @@ I've written this because it was exhausting searching the schedule every time an
 A problem was to get the Week of Year of an date but I've found an [solution on StackOverflow](http://stackoverflow.com/a/6117889)(the minified prototype). The schedule manager's page is made with frames, so the way dealing with getting and setting the (frame) window location is different.
 
 ##ToDo
-
- * Add "show welcome page"
+ * Refactor
+ * Allow week navigation via hash
+ * Multiple schedules (e.g. one for class and another for student schedule, for comparism)
+ * Implement Greasemonkey Update
  * Make code object-orientated.
+
+##Done
+ * 14.02.2015: Add "show welcome page"
 
 ##Changelog
 See [commits](https://github.com/criztovyl/myschedule/commits/master).
